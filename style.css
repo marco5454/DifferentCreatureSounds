@@ -15,182 +15,164 @@ body {
 }
 
 /* Header */
-
 header {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
-.title {
+header .title {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  border-bottom: 3px solid white;
+  border-bottom: 1px dotted white;
   border-bottom-style: outset;
 }
 
-.title h1 {
-  font-size: 4rem;
+header .title h1 {
+  font-size: 1.3rem;
   font-family: "The Monster", sans-serif;
-  letter-spacing: 10px;
 }
 
-.title img {
-  margin-left: 10px;
-  width: 100px;
+header .title img {
+  width: 60px;
 }
 
 /* Section */
 section {
   width: 100%;
-  height: 50vh;
-  padding: 10px;
+  height: 200vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.section-container {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.section-container .box {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border-style: outset;
-  transition: all 0.3s ease-in-out;
-}
-
-.section-container .box button {
-  width: 100%;
-  height: 100%;
-}
-
-.section-container .box:hover {
-  width: 180px;
-  height: 200px;
-}
-
-.box .cat {
-  background-image: url("./photo/cat.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box .beast {
-  background-image: url("./photo/beast.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box .bee {
-  background-image: url("./photo/bee.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box .dragon {
-  background-image: url("./photo/dargon.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box .dog {
-  background-image: url("./photo/dog.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box .goat {
-  background-image: url("./photo/goat.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box .hamster {
-  background-image: url("./photo/hamster.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box .monster {
-  background-image: url("./photo/monster.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Short Description */
-
-.short-description {
-  width: 100%;
-  height: 20vh;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.short-description .desc-title {
-  width: 50%;
-  height: 20%;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.desc-title h1 {
-  font-size: 2.7rem;
+section .section-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section .section-container .box {
+  width: 130px;
+  height: 130px;
+  border: 1px solid white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section .section-container .box .cat {
+  background-image: url("./photo/cat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-container .box .beast {
+  background-image: url("./photo/beast.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-container .box .bee {
+  background-image: url("./photo/bee.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-container .box .dog {
+  background-image: url("./photo/dog.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-container .box .dragon {
+  background-image: url("./photo/dragon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-container .box .goat {
+  background-image: url("./photo/goat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-container .box .hamster {
+  background-image: url("./photo/hamster.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-container .box .monster {
+  background-image: url("./photo/monster.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Description */
+
+.short-description {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.short-description .desc-title {
+  margin-bottom: 10px;
   font-family: "The Monster", sans-serif;
-  letter-spacing: 6px;
-  font-style: italic;
 }
 
 .short-description .desc-p {
-  width: 50%;
-  height: 50%;
-  border-bottom: 1px solid white;
-  border-bottom-style: outset;
+  width: 80%;
 }
 
 .short-description .desc-p p {
-  text-align: center;
-  letter-spacing: 5px;
-  font-size: 1.5rem;
-  font-family: "The Monster", sans-serif;
+  text-align: justify;
 }
 
 /* Footer */
-
 footer {
   width: 100%;
   height: 20vh;
@@ -200,9 +182,16 @@ footer {
   align-items: center;
 }
 
-.footer-wrapper {
-  width: 40%;
+footer .footer-wrapper {
+  margin-bottom: 10px;
+}
 
+footer .footer-wrapper h2 {
+  font-family: "The Monster", sans-serif;
+}
+
+footer .logo {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -210,110 +199,15 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-wrapper h2 {
-  font-family: "The Monster", sans-serif;
-  font-size: 2rem;
-  letter-spacing: 4px;
-  font-weight: 400;
-}
-
-.logo {
-  width: 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.logo ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+footer .logo ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
 }
 
-.logo i {
-  font-size: 1.5rem;
-  color: wheat;
-}
-
-@media (max-width: 1200px) {
-  .title {
-    justify-content: space-evenly;
-  }
-
-  .section-container {
-    width: 80%;
-  }
-}
-
-@media (max-width: 992px) {
-  .title {
-    justify-content: space-evenly;
-  }
-
-  .title h1 {
-    font-size: 3rem;
-  }
-
-  .section-container {
-    width: 80%;
-  }
-}
-
-@media (max-width: 798px) {
-  .title {
-    justify-content: space-evenly;
-  }
-
-  .title h1 {
-    font-size: 2rem;
-  }
-
-  .section-container {
-    width: 80%;
-  }
-
-  .section-container .box {
-    width: 110px;
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-style: outset;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .short-description .desc-title h1 {
-    font-size: 2rem;
-  }
-
-  .short-description .desc-p {
-    width: 90%;
-  }
-
-  .desc-p p {
-    font-size: 0.1rem;
-  }
-
-  .footer-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-  }
-
-  .footer-wrapper h1 {
-    font-size: 1rem;
-  }
-
-  .logo {
-    width: 20%;
-  }
+footer .copy-rights small {
+  font-family: "The Monster", sans-serif;
 }
